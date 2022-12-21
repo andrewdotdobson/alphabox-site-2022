@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black;
+}
+
+.container {
+  @apply max-w-full md:max-w-6xl px-8 md:px-2 mx-auto bg-gray-200 py-2 my-8;
+}
+
+.square {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  background-color: #eee;
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.alphagrid {
+  @apply grid grid-rows-3 grid-cols-3 gap-2 w-full h-full;
+}
+.griditem {
+  @apply h-full w-full flex items-center justify-center;
+}
