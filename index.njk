@@ -3,15 +3,25 @@
 {% block title %}ALPHABOX | what's in the box?{% endblock %}
 
 {% block content %}
+<div class="logo font-alphahead font-thin text-3xl uppercase text-white text-center pt-8">
+    Alphabox
+  </div>
 <div class="container">
+  
   <div class="square">
     <div class="content">
       <div class="alphagrid">
-        <div class="griditem bg-gray-800">Helios - my main thing</div>
+        <div class="griditem bg-gray-800 font-alphabody font-thin text-sm uppercase text-white">
+          <p class="">status Q: transmit();</p>
+        </div>
         <div class="griditem bg-gray-800">Only Forward EP</div>
-        <div class="griditem bg-gray-800">3</div>
+        <div class="griditem bg-gray-800">
+          <div id="particles-js" class="w-full h-full"></div>
+        </div>
         <div class="griditem bg-gray-800">4</div>
-        <div class="griditem bg-black">A</div>
+        <div class="griditem bg-black">
+          <img src="/assets/img/alphaboxA.png" alt="Alphabox A">
+        </div>
         <div class="griditem bg-gray-800">6</div>
         <div class="griditem bg-gray-800">7</div>
         <div class="griditem bg-gray-800">8</div>
@@ -20,5 +30,9 @@
     </div>
   </div>
 </div>
-
+<script>
+  particlesJS.load('particles-js', '/assets/config/particlesjs-config.json', function() {
+  console.log('callback - particles-js config loaded');
+});
+</script>
 {% endblock %}
