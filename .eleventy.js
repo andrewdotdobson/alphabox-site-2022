@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
     return now
   })
   eleventyConfig.addPassthroughCopy("assets/img");
+  eleventyConfig.addPassthroughCopy("assets/video");
   eleventyConfig.addPassthroughCopy("assets/config");
   eleventyConfig.addPassthroughCopy("scripts");
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
