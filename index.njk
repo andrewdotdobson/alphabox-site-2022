@@ -3,24 +3,20 @@
 {% block title %}ALPHABOX | what's in the box?{% endblock %}
 
 {% block content %}
-<div class="logo font-alphahead font-thin text-3xl uppercase text-white text-center pt-8">
-    Alphabox
-  </div>
-<div class="font-alphabody font-thin text=sm uppercase text-white text-center">
-  <p>audio visual electronica</p>  
-</div>
+{% include "_includes/header.njk" %}
 
 <div class="container">
   <div class="square">
     <div class="content">
       <div class="alphagrid">
         <div class="griditem2 bg-gray-800 font-alphabody font-thin text-xs md:text-sm uppercase text-white p-4 flex-col">
-          <p class="">Only Forward EP</p>
-          <p>VLSI Records</p>
-          <p>Dec 23</p>
+          <p>8th Dec 23</p>
+          <p class=""><a href="/releases/only-forward-ep/"  class="underline">Only Forward EP</a></p>
+          <p><a href="https://www.vlsimusic.co.uk/"></a>VLSI Records</p>
+          <p><a href="https://alphab0x.bandcamp.com/album/only-forward-ep" class="underline">Preorder on Bandcamp</a></p>
         </div>
         <div class="griditem font-alphabody text-xs md:text-sm uppercase text-white bg-gray-900 flex flex-col">
-          <img src="assets/img/onlyforwardartwork.jpg" alt="Only Forward EP cover ">
+          <a href="/releases/only-forward-ep/"><img src="assets/img/onlyforwardartwork.jpg" alt="Only Forward EP cover "></a>
         </div>
         <div class="griditem bg-black">
           <div id="particles-js" class="w-full h-full"></div>
